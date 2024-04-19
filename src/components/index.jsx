@@ -6,7 +6,7 @@ import SmartThermostats from "./SmartThermostats";
 import ProductCard from "./ProductCard";
 import Conclusion from "./Conclusion";
 import Footer from "./Footer";
-
+import Error from "./Error";
 export {
   HeroSection,
   Navbar,
@@ -16,4 +16,5 @@ export {
   ProductCard,
   Conclusion,
   Footer,
+  Error,
 };

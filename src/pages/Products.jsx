@@ -8,20 +8,24 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
-import { ProductCard } from "../components";
+import React, { useContext, useEffect, useState } from "react";
+import { Error, ProductCard } from "../components";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import { ErrorContext } from "../PageWrapper";
+import { BsWifi1, BsWifi2, BsWifiOff } from "react-icons/bs";
 
 const Products = () => {
-let {productName} = useParams()
-
+  let { productName } = useParams();
+  let { error, setError } = useContext(ErrorContext);
   const [devices, setDevices] = useState([]);
   const [doorBells, setDoorBells] = useState([]);
   const [thermostats, setThermostats] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [filteringValue, setFilteringValue] = useState(productName || "smart door bells");
-// console.log(productName);
+  const [filteringValue, setFilteringValue] = useState(
+    productName || "smart door bells"
+  );
+  // console.log(productName);
   function removeDuplicates(array, property) {
     return array.filter(
       (obj, index, self) =>
@@ -29,62 +33,67 @@ let {productName} = useParams()
     );
   }
   const fetchDoorBellsData = async () => {
-    if(doorBells.length > 0) {
+    if (doorBells.length > 0) {
       // setFilteringValue("smart door bells");
       setDevices(removeDuplicates(doorBells, "asin"));
-      setLoading(false)
-      return
+      setLoading(false);
+      return;
     }
     try {
       setLoading(true);
 
       const door_bells_options = {
-        method: 'GET',
-        url: 'https://amazon-scraper-api11.p.rapidapi.com/search/smart%20door%20bell',
+        method: "GET",
+        url:
+          "https://amazon-scraper-api11.p.rapidapi.com/search/smart%20door%20bell",
         params: {
-          api_key: 'a6b524dc87ad22814fe57302cea9cc20'
+          api_key: "a6b524dc87ad22814fe57302cea9cc20",
         },
         headers: {
-          'X-RapidAPI-Key': '3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709',
-          'X-RapidAPI-Host': 'amazon-scraper-api11.p.rapidapi.com'
-        }
+          "X-RapidAPI-Key":
+            "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
+          "X-RapidAPI-Host": "amazon-scraper-api11.p.rapidapi.com",
+        },
       };
 
       const door_bells_response = await axios.request(door_bells_options);
       setDoorBells(door_bells_response.data.results);
       console.log(door_bells_response);
       setDevices([
-        ...removeDuplicates(door_bells_response.data.results, "asin")
+        ...removeDuplicates(door_bells_response.data.results, "asin"),
       ]);
       setLoading(false);
       console.log(door_bells_response);
-    } catch (error) {
-      console.error("Error fetching data:", error);
+    } catch (err) {
+      if (err.message === "Network Error")
+        setError("Check your internet connection");
+      else setError("Error fetching data");
       setLoading(false);
     }
   };
   const fetchThermostatData = async () => {
     setLoading(true);
 
-    if(thermostats.length > 0) {
+    if (thermostats.length > 0) {
       console.log(thermostats);
       setDevices(thermostats);
-      setLoading(false)
-      return
+      setLoading(false);
+      return;
     }
-    
 
     try {
       const thermostat_options = {
-        method: 'GET',
-        url: 'https://amazon-scraper-api11.p.rapidapi.com/search/smart%20thermostat',
+        method: "GET",
+        url:
+          "https://amazon-scraper-api11.p.rapidapi.com/search/smart%20thermostat",
         params: {
-          api_key: 'a6b524dc87ad22814fe57302cea9cc20'
+          api_key: "a6b524dc87ad22814fe57302cea9cc20",
         },
         headers: {
-          'X-RapidAPI-Key': '3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709',
-          'X-RapidAPI-Host': 'amazon-scraper-api11.p.rapidapi.com'
-        }
+          "X-RapidAPI-Key":
+            "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
+          "X-RapidAPI-Host": "amazon-scraper-api11.p.rapidapi.com",
+        },
       };
 
       const thermostat_response = await axios.request(thermostat_options);
@@ -96,8 +105,10 @@ let {productName} = useParams()
       ]);
       setLoading(false);
       // console.log(door_bells_response);
-    } catch (error) {
-      console.error("Error fetching data:", error);
+    } catch (err) {
+      if (err.message === "Network Error")
+        setError("Check your internet connection");
+      else setError("Error fetching data");
       setLoading(false);
     }
   };
@@ -123,7 +134,9 @@ let {productName} = useParams()
         >
           <Heading>Products</Heading>
           <Flex gap="4" alignItems={"center"}>
-            <Text fontWeight={"semibold"} mb="0">Filter:</Text>
+            <Text fontWeight={"semibold"} mb="0">
+              Filter:
+            </Text>
             <Select
               maxW="20rem"
               cursor={"pointer"}
@@ -139,6 +152,8 @@ let {productName} = useParams()
             <Grid placeItems={"center"} minH={"10rem"}>
               <Spinner size="xl" />
             </Grid>
+          ) : error ? (
+            <Error icon={<BsWifiOff />} message={error} />
           ) : (
             <Grid
               templateColumns={{

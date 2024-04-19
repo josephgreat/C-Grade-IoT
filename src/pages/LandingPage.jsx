@@ -1,39 +1,47 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   Conclusion,
+  Error,
   HeroSection,
   Intro,
   ProductCard,
   Smartdoorbells,
   SmartThermostats,
 } from "../components";
-import { Box, Button, Divider, Grid, Heading, Spinner, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Divider,
+  Grid,
+  Heading,
+  Spinner,
+  Link,
+} from "@chakra-ui/react";
 import axios from "axios";
 import { Link as RouteLink } from "react-router-dom";
+import { BsWifiOff } from "react-icons/bs";
+import { ErrorContext } from "../PageWrapper";
 
 const LandingPage = () => {
   const [devices, setDevices] = useState([]);
   const [loading, setLoading] = useState(true);
+  const {error, setError} = useContext(ErrorContext);
 
-  // try {
-  //   const response = await axios.request(options);
-  //   console.log(response.data);
-  // } catch (error) {
-  //   console.error(error);
-  // }
   useEffect(() => {
     const fetchData = async () => {
       try {
         const options = {
-          method: 'GET',
-          url: 'https://amazon-scraper-api11.p.rapidapi.com/search/smart%20door%20bell',
+          method: "GET",
+          url:
+            "https://amazon-scraper-api11.p.rapidapi.com/search/smart%20door%20bell",
           params: {
-            api_key: 'a6b524dc87ad22814fe57302cea9cc20'
+            api_key: "a6b524dc87ad22814fe57302cea9cc20",
           },
           headers: {
-            'X-RapidAPI-Key': '3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709',
-            'X-RapidAPI-Host': 'amazon-scraper-api11.p.rapidapi.com'
-          }
+            "X-RapidAPI-Key":
+              "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
+            "X-RapidAPI-Host": "amazon-scraper-api11.p.rapidapi.com",
+          },
         };
         const response = await axios.request(options);
         console.log(response.data);
@@ -41,6 +49,10 @@ const LandingPage = () => {
         setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
+        if (error.message === "Network Error") {
+          setError("Please check your Internet ");
+        }
+        console.log(error.message);
         setLoading(false);
       }
     };
@@ -73,6 +85,8 @@ const LandingPage = () => {
           <Grid placeItems={"center"} minH={"10rem"}>
             <Spinner size="xl" />
           </Grid>
+        ) : error ? (
+          <Error message={error} icon={<BsWifiOff />} />
         ) : (
           <Grid
             templateColumns={{
@@ -92,7 +106,14 @@ const LandingPage = () => {
             ))}
           </Grid>
         )}
-        <Link as={RouteLink} to="/products/smart door bells" mt="8" w="fit-content" mx="auto" display={"flex"}>
+        <Link
+          as={RouteLink}
+          to="/products/smart door bells"
+          mt="8"
+          w="fit-content"
+          mx="auto"
+          display={"flex"}
+        >
           See All Products
         </Link>
       </Box>

@@ -3,7 +3,7 @@ import React from "react";
 import { Link as RouteLink } from "react-router-dom";
 
 const ProductCard = ({ device }) => {
-  let { name, image, stars, price_string, asin } = device;
+  let { name, image, asin } = device;
   return (
     <Link as={RouteLink} to={`/product_detail/${asin}`}>
       <GridItem
@@ -22,15 +22,8 @@ const ProductCard = ({ device }) => {
           <Text fontSize="lg" className="product_title">
             {name}
           </Text>
-          {/* <Text>{device.description}</Text> */}
-          <Text fontSize="md" fontWeight="bold" mt={2}>
-            Price:{" "}
-            {/* <Text as="del" color={"red"}>
-            {price_string}
-          </Text>{" "} */}
-            {price_string}
-          </Text>
-          <Text>{stars}</Text>
+
+          {/* <Text>Rating: {product_information["Generic Name"]}</Text> */}
         </Box>
       </GridItem>
     </Link>

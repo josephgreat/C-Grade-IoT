@@ -46,7 +46,8 @@ const ProductDetail = () => {
           api_key: "a6b524dc87ad22814fe57302cea9cc20",
         },
         headers: {
-          "X-RapidAPI-Key": "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
+          "X-RapidAPI-Key":
+            "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
           "X-RapidAPI-Host": "amazon-scraper-api11.p.rapidapi.com",
         },
       };
@@ -67,7 +68,7 @@ const ProductDetail = () => {
     <Container position={"relative"} pt={28} pb="12" maxW="unset" m="0">
       {loading ? (
         <Grid minH={"15rem"} placeItems={"center"}>
-          <Spinner />
+          <Spinner size={"xl"} />
         </Grid>
       ) : (
         <Flex
@@ -118,7 +119,7 @@ const ProductDetail = () => {
           <Flex flexDir={"column"} w={{ base: "100%", md: "55%" }} gap="16">
             <Box>
               <Heading>{productDetail.name}</Heading>
-              <Text
+              {/* <Text
                 fontSize={"1.2rem"}
                 fontWeight={"semibold"}
                 color="primary"
@@ -127,7 +128,7 @@ const ProductDetail = () => {
                 {productDetail.pricing}
               </Text>
               <Text>List Price: {productDetail.list_price}</Text>
-              <Text>Shipping Price: {productDetail.shipping_price}</Text>
+              <Text>Shipping Price: {productDetail.shipping_price}</Text> */}
             </Box>
             <Box>
               <Heading as="h4" fontSize={"1.3rem"}>
