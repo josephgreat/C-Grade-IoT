@@ -98,7 +98,7 @@ const Navbar = () => {
             <Link
               as={RouteLink}
               onClick={() => setOpenNav(false)}
-              to="/products/"
+              to="/products/smart door bells"
               fontFamily={"'DM Sans', sans-serif"}
             >
               Products
