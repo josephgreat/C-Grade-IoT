@@ -33,14 +33,14 @@ const LandingPage = () => {
         const options = {
           method: "GET",
           url:
-            "https://amazon-scraper-api11.p.rapidapi.com/search/smart%20door%20bell",
+            "https://amazon-scrapper17.p.rapidapi.com/search/smart%20door%20bell",
           params: {
-            api_key: "a6b524dc87ad22814fe57302cea9cc20",
+            apiKey: "3c801d11ddb8472ee82c78036719fd15",
           },
           headers: {
             "X-RapidAPI-Key":
               "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
-            "X-RapidAPI-Host": "amazon-scraper-api11.p.rapidapi.com",
+            "X-RapidAPI-Host": "amazon-scrapper17.p.rapidapi.com",
           },
         };
         const response = await axios.request(options);
