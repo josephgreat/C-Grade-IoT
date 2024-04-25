@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useParams, Link as RouteLink } from "react-router-dom";
 import {
   Box,
   Button,
@@ -22,7 +22,6 @@ import {
   Text,
   Tr,
 } from "@chakra-ui/react";
-import Carousel from "react-bootstrap/Carousel";
 import {
   CCarousel,
   CCarouselCaption,
@@ -35,26 +34,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const ProductDetail = () => {
   const [productDetail, setProductDetail] = useState();
   const [loading, setLoading] = useState(true);
-  let { product_asin } = useParams();
+  let { product_id, productName } = useParams();
 
   useEffect(() => {
     const fetchProductDetail = async () => {
       const options = {
         method: "GET",
-        url: `https://amazon-scraper-api11.p.rapidapi.com/products/${product_asin}`,
+        url: `https://amazon-scrapper17.p.rapidapi.com/products/${product_id}`,
         params: {
-          api_key: "a6b524dc87ad22814fe57302cea9cc20",
+          apiKey: "3c801d11ddb8472ee82c78036719fd15",
         },
         headers: {
           "X-RapidAPI-Key":
             "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
-          "X-RapidAPI-Host": "amazon-scraper-api11.p.rapidapi.com",
+          "X-RapidAPI-Host": "amazon-scrapper17.p.rapidapi.com",
         },
       };
 
       try {
         const response = await axios.request(options);
-        console.log(response);
+        console.log(response.data);
         setProductDetail(response.data);
         setLoading(false);
       } catch (error) {
@@ -84,11 +83,11 @@ const ProductDetail = () => {
             w={{ base: "90%", md: "35%" }}
           >
             <Box as={CCarousel} controls indicators dark>
-              {productDetail.images.map((image, index) => (
+              {productDetail.images.map((imageurl, index) => (
                 <Box as={CCarouselItem} key={index}>
                   <Box
                     as={CImage}
-                    src={image}
+                    src={imageurl}
                     maxH="20rem"
                     mx="auto"
                     aspectRatio={{ base: 1, sm: 1 }}
@@ -107,12 +106,17 @@ const ProductDetail = () => {
                 Features
               </Heading>
               <List spacing={3} paddingLeft={"0"}>
-                {productDetail.feature_bullets.map((feature, index) => (
-                  <ListItem key={index}>
-                    <ListIcon as={FaCheckDouble} color="green.500" />
-                    <Text as="span">{feature}</Text>
-                  </ListItem>
-                ))}
+                {productDetail.feature_bullets.map((feature, index) => {
+                  return (
+                    <ListItem key={index}>
+                      <ListIcon as={FaCheckDouble} color="green.500" />
+                      {/* <Text as="span" fontWeight={"semibold"} pr="2">
+                            {key}:
+                          </Text> */}
+                      <Text as="span">{feature}</Text>
+                    </ListItem>
+                  );
+                })}
               </List>
             </Box>
           </Flex>
@@ -137,30 +141,34 @@ const ProductDetail = () => {
               <Text>{productDetail.full_description}</Text>
             </Box>
             <Box>
-              <Link href={productDetail.brand_url}>Visit Site</Link>
+              <Link href={productDetail.brand_url} target="_blank">
+                {productDetail.brand}
+              </Link>
             </Box>
             <Box>
+              <Heading as="h4" fontSize={"1.3rem"} mb={2}>
+                Product Information
+              </Heading>
               <TableContainer>
-                <Heading as="h4" fontSize={"1.3rem"}>
-                  Product Information
-                </Heading>
-                <Table variant={"simple"} size={"sm"}>
+                <Table
+                  variant={"striped"}
+                  size={"sm"}
+                  boxShadow={"sm"}
+                  borderRadius={"1rem"}
+                  w="100%"
+                  // overflow={"hidden"}
+                  style={{tableLayout: "fixed"}}
+                >
                   <TableCaption>Product Info</TableCaption>
                   <Tbody>
                     {Object.entries(productDetail.product_information).map(
-                      ([key, value], index) => {
-                        if (
-                          typeof value !== "object" &&
-                          value.constructor !== Object
-                        ) {
-                          return (
-                            <Tr key={index}>
-                              <Td fontWeight={"semibold"}>{key}:</Td>
-                              <Td w="100%">{value}</Td>
-                            </Tr>
-                          );
-                        }
-                      }
+                      ([key, value], index) => (
+                        <Tr key={index}>
+                          <Td fontWeight={"semibold"}>{key}</Td>
+
+                          <Td style={{wordWrap: "break-word"}}>{value}</Td>
+                        </Tr>
+                      )
                     )}
                   </Tbody>
                 </Table>
@@ -173,6 +181,8 @@ const ProductDetail = () => {
               color={"white"}
               bg="primary"
               _hover={{ animation: "unset" }}
+              as={RouteLink}
+              to={`/vulnerability/${productName}`}
             >
               Check Vulnerability
             </Button>

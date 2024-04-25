@@ -7,7 +7,7 @@ const PageWrapper = ({ Component }) => {
   const [error, setError] = useState("");
 
   return (
-    <Flex flexDir="column" justifyContent={"space-between"} pos={"relative"}>
+    <Flex flexDir="column" minH="100vh" justifyContent={"space-between"} pos={"relative"}>
       <Navbar />
       <ErrorContext.Provider value={{ error: error, setError: setError }}>
         <Component />

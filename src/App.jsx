@@ -23,7 +23,13 @@ import {
   SmartThermostats,
 } from "./components";
 import "./App.css";
-import { LandingPage, ProductDetail, Products } from "./pages";
+import {
+  LandingPage,
+  ProductDetail,
+  Products,
+  SmartDoorBellsVul,
+  Vulnerability,
+} from "./pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PageWrapper from "./PageWrapper";
 
@@ -31,6 +37,7 @@ const App = () => {
   let router = createBrowserRouter([
     {
       path: "/",
+      // element: <PageWrapper Component={SmartDoorBellsVul} />,
       element: <PageWrapper Component={LandingPage} />,
     },
     {
@@ -38,8 +45,12 @@ const App = () => {
       element: <PageWrapper Component={Products} />,
     },
     {
-      path: "/product_detail/:product_asin",
+      path: "/product_detail/:productName/:product_id",
       element: <PageWrapper Component={ProductDetail} />,
+    },
+    {
+      path: "/vulnerability/:productName",
+      element: <PageWrapper Component={Vulnerability} />,
     },
   ]);
 
