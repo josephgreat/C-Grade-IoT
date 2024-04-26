@@ -25,23 +25,21 @@ import { ErrorContext } from "../PageWrapper";
 const LandingPage = () => {
   const [devices, setDevices] = useState([]);
   const [loading, setLoading] = useState(true);
-  const {error, setError} = useContext(ErrorContext);
+  const { error, setError } = useContext(ErrorContext);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const options = {
-          method: "GET",
-          url:
-            "https://amazon-scrapper17.p.rapidapi.com/search/smart%20door%20bell",
+          method: 'GET',
+          url: 'https://h-amazon-data-scraper2.p.rapidapi.com/search/smart%20door%20bells',
           params: {
-            apiKey: "3c801d11ddb8472ee82c78036719fd15",
+            api_key: '69fa81e8482d59c2da9d196b27999911'
           },
           headers: {
-            "X-RapidAPI-Key":
-              "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
-            "X-RapidAPI-Host": "amazon-scrapper17.p.rapidapi.com",
-          },
+            'X-RapidAPI-Key': '3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709',
+            'X-RapidAPI-Host': 'h-amazon-data-scraper2.p.rapidapi.com'
+          }
         };
         const response = await axios.request(options);
         console.log(response.data);

@@ -45,14 +45,14 @@ const Products = () => {
       const door_bells_options = {
         method: "GET",
         url:
-          "https://amazon-scrapper17.p.rapidapi.com/search/smart%20door%20bell",
+          "https://h-amazon-data-scraper2.p.rapidapi.com/search/smart%20door%20bells",
         params: {
-          apiKey: "3c801d11ddb8472ee82c78036719fd15",
+          api_key: "69fa81e8482d59c2da9d196b27999911",
         },
         headers: {
           "X-RapidAPI-Key":
             "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
-          "X-RapidAPI-Host": "amazon-scrapper17.p.rapidapi.com",
+          "X-RapidAPI-Host": "h-amazon-data-scraper2.p.rapidapi.com",
         },
       };
 
@@ -83,14 +83,14 @@ const Products = () => {
       const thermostat_options = {
         method: "GET",
         url:
-          "https://amazon-scrapper17.p.rapidapi.com/search/smart%20thermostat",
+          "https://h-amazon-data-scraper2.p.rapidapi.com/search/smart%20thermostat",
         params: {
-          apiKey: "3c801d11ddb8472ee82c78036719fd15",
+          api_key: "69fa81e8482d59c2da9d196b27999911",
         },
         headers: {
           "X-RapidAPI-Key":
             "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
-          "X-RapidAPI-Host": "amazon-scrapper17.p.rapidapi.com",
+          "X-RapidAPI-Host": "h-amazon-data-scraper2.p.rapidapi.com",
         },
       };
 

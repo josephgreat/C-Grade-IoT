@@ -5,7 +5,12 @@ import { Link as RouteLink } from "react-router-dom";
 const ProductCard = ({ device, productName }) => {
   let { name, image, asin } = device;
   return (
-    <Link as={RouteLink} to={`/product_detail/${productName}/${asin}`}>
+    <Link
+      as={RouteLink}
+      to={`/product_detail/${
+        productName ? productName : "smart door bells"
+      }/${asin}`}
+    >
       <GridItem
         cursor={"pointer"}
         _hover={{ transform: "scale(1.05)", backdropFilter: "contrast(.95)" }}

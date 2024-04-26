@@ -40,14 +40,14 @@ const ProductDetail = () => {
     const fetchProductDetail = async () => {
       const options = {
         method: "GET",
-        url: `https://amazon-scrapper17.p.rapidapi.com/products/${product_id}`,
+        url: `https://h-amazon-data-scraper2.p.rapidapi.com/products/${product_id}`,
         params: {
-          apiKey: "3c801d11ddb8472ee82c78036719fd15",
+          api_key: "69fa81e8482d59c2da9d196b27999911",
         },
         headers: {
           "X-RapidAPI-Key":
             "3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709",
-          "X-RapidAPI-Host": "amazon-scrapper17.p.rapidapi.com",
+          "X-RapidAPI-Host": "h-amazon-data-scraper2.p.rapidapi.com",
         },
       };
 
@@ -157,18 +157,24 @@ const ProductDetail = () => {
                   borderRadius={"1rem"}
                   w="100%"
                   // overflow={"hidden"}
-                  style={{tableLayout: "fixed"}}
+                  style={{ tableLayout: "fixed" }}
                 >
                   <TableCaption>Product Info</TableCaption>
                   <Tbody>
                     {Object.entries(productDetail.product_information).map(
-                      ([key, value], index) => (
-                        <Tr key={index}>
-                          <Td fontWeight={"semibold"}>{key}</Td>
+                      ([key, value], index) => {
+                        if (typeof value !== "object") {
+                          return (
+                            <Tr key={index}>
+                              <Td fontWeight={"semibold"}>{key}</Td>
 
-                          <Td style={{wordWrap: "break-word"}}>{value}</Td>
-                        </Tr>
-                      )
+                              <Td style={{ wordWrap: "break-word" }}>
+                                {value}
+                              </Td>
+                            </Tr>
+                          );
+                        }
+                      }
                     )}
                   </Tbody>
                 </Table>
