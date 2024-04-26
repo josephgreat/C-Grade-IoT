@@ -27,8 +27,8 @@ import {
   LandingPage,
   ProductDetail,
   Products,
-  SmartDoorBellsVul,
   Vulnerability,
+  VulnerabilityControl,
 } from "./pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PageWrapper from "./PageWrapper";
@@ -51,6 +51,10 @@ const App = () => {
     {
       path: "/vulnerability/:productName",
       element: <PageWrapper Component={Vulnerability} />,
+    },
+    {
+      path: "/vulnerability_control/:productName",
+      element: <PageWrapper Component={VulnerabilityControl} />,
     },
   ]);
 
