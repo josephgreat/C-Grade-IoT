@@ -109,10 +109,6 @@ const ProductDetail = () => {
                 {productDetail.feature_bullets.map((feature, index) => {
                   return (
                     <ListItem key={index}>
-                      <ListIcon as={FaCheckDouble} color="green.500" />
-                      {/* <Text as="span" fontWeight={"semibold"} pr="2">
-                            {key}:
-                          </Text> */}
                       <Text as="span">{feature}</Text>
                     </ListItem>
                   );
@@ -123,16 +119,6 @@ const ProductDetail = () => {
           <Flex flexDir={"column"} w={{ base: "100%", md: "55%" }} gap="16">
             <Box>
               <Heading>{productDetail.name}</Heading>
-              {/* <Text
-                fontSize={"1.2rem"}
-                fontWeight={"semibold"}
-                color="primary"
-                opacity={".8"}
-              >
-                {productDetail.pricing}
-              </Text>
-              <Text>List Price: {productDetail.list_price}</Text>
-              <Text>Shipping Price: {productDetail.shipping_price}</Text> */}
             </Box>
             <Box>
               <Heading as="h4" fontSize={"1.3rem"}>
@@ -156,7 +142,6 @@ const ProductDetail = () => {
                   boxShadow={"sm"}
                   borderRadius={"1rem"}
                   w="100%"
-                  // overflow={"hidden"}
                   style={{ tableLayout: "fixed" }}
                 >
                   <TableCaption>Product Info</TableCaption>

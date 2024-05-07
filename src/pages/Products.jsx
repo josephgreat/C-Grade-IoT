@@ -119,7 +119,7 @@ const Products = () => {
   };
 
   return (
-    <Container position={"relative"} maxW="unset" pt={28} pb="12" m="0">
+    <Container position={"relative"} px=".8rem" maxW="unset" pt={28} pb="12" m="0">
       <Box
         maxW={{ base: "90vw", sm: "85vw", md: "80vw", lg: "75vw" }}
         mx="auto"

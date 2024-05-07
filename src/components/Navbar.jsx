@@ -20,9 +20,9 @@ const Navbar = () => {
       zIndex="10"
       right={"0"}
       p="0"
-      bg={"rgba(0, 85, 94, .8)"}
       backdropFilter={"blur(20px)"}
       maxW={"unset"}
+      bg={"rgba(0, 85, 94, .8)"}
     >
       <Flex
         py={4}
@@ -83,7 +83,7 @@ const Navbar = () => {
             transition={"all .3s linear"}
             right={{ base: openNav ? "0" : "-100%", md: "unset" }}
             top={{ base: "100%", md: "unset" }}
-            bg={{ base: "rgba(0, 85, 94, .5)", md: "transparent" }}
+            bg={{ base: "rgba(0, 85, 94, 1)", md: "transparent" }}
             backdropFilter={{ base: "blur(30px)", md: "unset" }}
             p={{ base: "6", md: "unset" }}
           >
