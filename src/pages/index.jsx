@@ -3,6 +3,7 @@ import Products from "./Products";
 import ProductDetail from "./ProductDetail";
 import Vulnerability from "./Vulnerability";
 import VulnerabilityControl from "./VulnerabilityControl";
+import ContactUsPage from "./ContactUsPage";
 
 export {
   LandingPage,
@@ -10,5 +11,5 @@ export {
   ProductDetail,
   Vulnerability,
   VulnerabilityControl,
-
+  ContactUsPage,
 };

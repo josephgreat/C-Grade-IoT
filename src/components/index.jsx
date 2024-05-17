@@ -1,20 +1,22 @@
 import HeroSection from "./HeroSection";
 import Navbar from "./Navbar";
 import Intro from "./Intro";
-import Smartdoorbells from "./Smartdoorbells";
-import SmartThermostats from "./SmartThermostats";
+import Features from "./Features";
+import HowToGetStarted from "./HowToGetStarted";
 import ProductCard from "./ProductCard";
-import Conclusion from "./Conclusion";
+import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 import Error from "./Error";
+import WhyTrustUs from "./WhyTrustUs";
 export {
   HeroSection,
   Navbar,
   Intro,
-  Smartdoorbells,
-  SmartThermostats,
+  Features,
+  HowToGetStarted,
   ProductCard,
-  Conclusion,
+  ContactUs,
   Footer,
   Error,
+  WhyTrustUs
 };

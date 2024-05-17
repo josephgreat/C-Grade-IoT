@@ -22,7 +22,7 @@ const HeroSection = () => {
       backgroundColor={"primary"}
       bgSize={"cover"}
     >
-      <Box pos={"absolute"} inset={"0"} bg="rgba(0,0,0,.6)" />
+      <Box pos={"absolute"} inset={"0"} w="100%" bg="rgba(0,0,0,.6)" />
       <Box
         maxW={{ base: "90vw", sm: "85vw", md: "80vw", lg: "75vw" }}
         mx={"auto"}
@@ -30,29 +30,17 @@ const HeroSection = () => {
         zIndex={"2"}
         pos={"relative"}
       >
-        <Flex justifyContent={"space-between"} alignItems={"center"}>
+        <Flex justifyContent={"space-between"} alignItems={"center"} flexWrap={"wrap"} gap="4">
           <Box w={{ base: "100%", md: "50%" }}>
-            <Heading fontSize="2.5rem">Welcome To Consumer-Grade IoT</Heading>
+            <Heading fontSize="2.5rem">Welcome to Your IoT Safety Hub</Heading>
             <Text fontSize={"md"} mt="4" fontWeight={"semibold"} opacity={".6"}>
-              Discover the Future of Home Automation
+              Protecting Your Home, One Device at a Time
             </Text>
-            <Text
-              mt="12"
-              opacity={".8"}
-              textAlign={"justify"}
-              fontSize={"md"}
-              fontWeight={"semibold"}
-            >
-              In today's rapidly advancing technological landscape, the
-              integration of IoT (Internet of Things) devices into our homes has
-              become commonplace. These devices offer convenience, efficiency,
-              and connectivity like never before, transforming the way we
-              interact with our living spaces.
-            </Text>
+
             <Button mt="4" display={{ md: "none" }}>
               Explore Products
             </Button>
-            <Flex mt="16" gap="16">
+            <Flex mt="16" gap={{ base: "10", md: "16" }} flexWrap={"wrap"}>
               <Box>
                 <Text fontSize={"2rem"} fontWeight={"bold"}>
                   2
@@ -81,10 +69,7 @@ const HeroSection = () => {
               </Box>
             </Flex>
           </Box>
-          <Box display={{ base: "none", md: "block" }}>
-            <Text fontSize={"md"} fontWeight={"semibold"} mb="4">
-              Always in control
-            </Text>
+          <Box>
             <Link
               as={RouteLink}
               to="/products/smart door bells"
@@ -96,7 +81,7 @@ const HeroSection = () => {
               _hover={{
                 textDecor: "unset",
                 bg: "white",
-                color: "primary"
+                color: "primary",
               }}
             >
               Explore Products

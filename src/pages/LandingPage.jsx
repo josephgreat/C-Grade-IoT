@@ -1,127 +1,43 @@
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import {
-  Conclusion,
-  Error,
+  ContactUs,
   HeroSection,
   Intro,
-  ProductCard,
-  Smartdoorbells,
-  SmartThermostats,
+  Features,
+  WhyTrustUs,
+  HowToGetStarted,
 } from "../components";
-import {
-  Box,
-  Button,
-  Divider,
-  Grid,
-  Heading,
-  Spinner,
-  Link,
-} from "@chakra-ui/react";
-import axios from "axios";
-import { Link as RouteLink } from "react-router-dom";
-import { BsWifiOff } from "react-icons/bs";
-import { ErrorContext } from "../PageWrapper";
+import { Box } from "@chakra-ui/react";
+
 
 const LandingPage = () => {
-  const [devices, setDevices] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const { error, setError } = useContext(ErrorContext);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const options = {
-          method: 'GET',
-          url: 'https://h-amazon-data-scraper2.p.rapidapi.com/search/smart%20door%20bells',
-          params: {
-            api_key: '69fa81e8482d59c2da9d196b27999911'
-          },
-          headers: {
-            'X-RapidAPI-Key': '3212423239msh31eb2c53aad051dp1e7cbcjsn269648a75709',
-            'X-RapidAPI-Host': 'h-amazon-data-scraper2.p.rapidapi.com'
-          }
-        };
-        const response = await axios.request(options);
-        console.log(response.data);
-        setDevices(response.data.results);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        if (error.message === "Network Error") {
-          setError("Please check your Internet ");
-        }
-        console.log(error.message);
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
   return (
     <Box>
       <HeroSection />
-      <Intro />
-      <Divider
-        h={".1rem"}
-        bg="rgba(126, 255, 254)"
-        maxW={{ base: "90vw", sm: "85vw", md: "80vw", lg: "75vw" }}
-        mx="auto"
+      <Intro
+        title={"What is IoT?"}
+        description={
+          "The Internet of Things (IoT) refers to the network of physical objects—“things”—embedded with sensors, software, and other technologies to connect and exchange data with other devices and systems over the internet. Examples include smart thermostats, security cameras, and connected appliances."
+        }
+      />
+      <Intro
+        title={"Why Should I Care?"}
+        title_right={true}
+        description={
+          "Your home is becoming smarter with these IoT devices, but they can also be vulnerable to cyber threats. Understanding these vulnerabilities is crucial to keeping your personal information and home safe."
+        }
+      />
+      <Intro
+        title={"Our Mission"}
+        description={
+          "Our platform aims to educate you on the common vulnerabilities found in popular home-grade IoT devices. We provide practical tips and resources to help you secure your smart home."
+        }
       />
 
-      <Smartdoorbells />
-      <SmartThermostats />
-      <Box
-        my="16"
-        maxW={{ base: "90vw", sm: "85vw", md: "80vw", lg: "75vw" }}
-        mx="auto"
-      >
-        <Heading as="h3" fontSize="1.7rem" textAlign={"center"} mb="8">
-          Range of Innovative Smart Products
-        </Heading>
-
-        {loading ? (
-          <Grid placeItems={"center"} minH={"10rem"}>
-            <Spinner size="xl" />
-          </Grid>
-        ) : error ? (
-          <Error message={error} icon={<BsWifiOff />} />
-        ) : (
-          <Grid
-            templateColumns={{
-              base: "repeat(1, 0.8fr)",
-              md: "repeat(2, 1fr)",
-              lg: "repeat(3, 1fr)",
-            }}
-            justifyContent={"center"}
-            alignItems={"center"}
-            placeItems={"center"}
-            gap={6}
-            mt={8}
-            minH={"10rem"}
-          >
-            {devices.splice(0, 6).map((device) => (
-              <ProductCard key={device.asin} device={device} />
-            ))}
-          </Grid>
-        )}
-        <Link
-          as={RouteLink}
-          to="/products/smart door bells"
-          mt="8"
-          w="fit-content"
-          mx="auto"
-          display={"flex"}
-        >
-          See All Products
-        </Link>
-      </Box>
-      <Divider
-        h={".1rem"}
-        bg="rgba(126, 255, 254)"
-        maxW={{ base: "90vw", sm: "85vw", md: "80vw", lg: "75vw" }}
-        mx="auto"
-      />
-      <Conclusion />
+      <Features />
+      <HowToGetStarted />
+      <WhyTrustUs />
+      <ContactUs />
     </Box>
   );
 };

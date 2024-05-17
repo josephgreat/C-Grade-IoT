@@ -20,9 +20,9 @@ const Navbar = () => {
       zIndex="10"
       right={"0"}
       p="0"
-      backdropFilter={"blur(20px)"}
+      backdropFilter={"blur(10px)"}
       maxW={"unset"}
-      bg={"rgba(0, 85, 94, .8)"}
+      bg={"rgba(0, 85, 94, .7)"}
     >
       <Flex
         py={4}
@@ -113,6 +113,7 @@ const Navbar = () => {
             </Link> */}
             <Link
               as={RouteLink}
+              to="/contact"
               onClick={() => setOpenNav(false)}
               fontFamily={"'DM Sans', sans-serif"}
             >
