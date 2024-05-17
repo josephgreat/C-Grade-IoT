@@ -33,7 +33,7 @@ const ProductCard = ({ device, index }) => {
     <VStack
       w="100%"
       // cursor={"pointer"}
-      _hover={{ backdropFilter: "contrast(.95)" }}
+      // _hover={{ backdropFilter: "contrast(.95)" }}
       transition={"all .3s linear"}
       p={5}
       borderBottom={"1px solid rgba(20,20,20,.2)"}
@@ -85,7 +85,7 @@ const ProductCard = ({ device, index }) => {
               </Flex>
             ))}
           </TabPanel>
-          <TabPanel display={"flex"} flexDir={"column"} gap="2">
+          <TabPanel bg="rgba(200,200,200,.3)" roundedBottom="2rem" display={"flex"} flexDir={"column"} gap="2">
             {mitigation_measures.map((mitigation_measure, index) => (
               <Flex key={index} alignItems={"center"} gap="2">
                 <Icon as={BsCheck2All} />
