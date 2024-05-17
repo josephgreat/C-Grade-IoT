@@ -103,14 +103,14 @@ const Navbar = () => {
             >
               Products
             </Link>
-            <Link
+            {/* <Link
               as={RouteLink}
               onClick={() => setOpenNav(false)}
               to="/vulnerability/smart door bells"
               fontFamily={"'DM Sans', sans-serif"}
             >
               Vulnerabilities
-            </Link>
+            </Link> */}
             <Link
               as={RouteLink}
               onClick={() => setOpenNav(false)}

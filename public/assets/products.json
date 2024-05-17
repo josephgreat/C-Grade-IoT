@@ -1,0 +1,589 @@
+{
+    "smart_door_bells": [
+        {
+            "name": "Ring Video Doorbell",
+            "details": {
+                "resolution": "1080p HD video",
+                "features": [
+                    "Two-way talk",
+                    "Advanced motion detection"
+                ]
+            },
+            "image_url": "/images/smart_door_bells/Ring Video Doorbell.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Privacy Concerns",
+                    "description": "Sharing user data with third parties"
+                },
+                {
+                    "name": "Hacking Incidents",
+                    "description": "Unauthorized access due to weak passwords"
+                },
+                {
+                    "name": "Firmware Updates",
+                    "description": "Delays in applying updates"
+                }
+            ],
+            "mitigation_measures": [
+                "Review and adjust privacy settings",
+                "Use strong, unique passwords and enable 2FA",
+                "Regularly update firmware"
+            ]
+        },
+        {
+            "name": "Nest Doorbell (by Google)",
+            "details": {
+                "resolution": "1600 x 1200 HD video",
+                "features": [
+                    "24/7 streaming",
+                    "Facial recognition"
+                ]
+            },
+            "image_url": "/images/smart_door_bells/Nest Doorbell (by Google).png",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over extensive data collection"
+                },
+                {
+                    "name": "Device Hacking",
+                    "description": "Risks if passwords are weak"
+                }
+            ],
+            "mitigation_measures": [
+                "Regularly review and adjust privacy settings",
+                "Use strong passwords and enable 2FA",
+                "Update firmware regularly"
+            ]
+        },
+        {
+            "name": "Arlo Essential Video Doorbell",
+            "details": {
+                "resolution": "1536 x 1536 HD video",
+                "features": [
+                    "Two-way audio",
+                    "Direct-to-mobile video calls"
+                ]
+            },
+            "image_url": "/images/smart_door_bells/Arlo Essential Video Doorbell.png",
+            "vulnerabilities": [
+                {
+                    "name": "Connectivity Issues",
+                    "description": "Potential Wi-Fi exploits"
+                },
+                {
+                    "name": "Cloud Storage",
+                    "description": "Data breaches affecting stored footage"
+                }
+            ],
+            "mitigation_measures": [
+                "Use strong encryption for Wi-Fi network",
+                "Regularly check for updates and review cloud storage policies",
+                "Ensure strong passwords and enable 2FA"
+            ]
+        },
+        {
+            "name": "Eufy Security Video Doorbell",
+            "details": {
+                "resolution": "2K resolution",
+                "features": [
+                    "4:3 aspect ratio",
+                    "Local storage"
+                ]
+            },
+            "image_url": "/images/smart_door_bells/Eufy Security Video Doorbell.webp",
+            "vulnerabilities": [
+                {
+                    "name": "Local Storage Security",
+                    "description": "Risks if local storage is accessed"
+                },
+                {
+                    "name": "Encryption",
+                    "description": "Concerns over data encryption protocols"
+                }
+            ],
+            "mitigation_measures": [
+                "Ensure physical security of local storage",
+                "Regularly update firmware",
+                "Review encryption standards and stay updated"
+            ]
+        },
+        {
+            "name": "August Doorbell Cam",
+            "details": {
+                "resolution": "960p HD video",
+                "features": [
+                    "Integrated floodlight",
+                    "Continuous recording"
+                ]
+            },
+            "image_url": "/images/smart_door_bells/August Doorbell Cam.png",
+            "vulnerabilities": [
+                {
+                    "name": "Software Vulnerabilities",
+                    "description": "Risks from outdated software"
+                },
+                {
+                    "name": "Physical Security",
+                    "description": "Potential tampering with the device"
+                }
+            ],
+            "mitigation_measures": [
+                "Regularly update firmware",
+                "Secure installation to prevent tampering"
+            ]
+        },
+        {
+            "name": "Remo+ RemoBell Series",
+            "details": {
+                "resolution": "1080p HD video",
+                "features": [
+                    "Customizable motion zones",
+                    "Free cloud storage"
+                ]
+            },
+            "image_url": "/images/smart_door_bells/Remo+ RemoBell Series.webp",
+            "vulnerabilities": [
+                {
+                    "name": "Wi-Fi Security",
+                    "description": "Weak Wi-Fi encryption"
+                },
+                {
+                    "name": "Firmware Updates",
+                    "description": "Potential delays in updates"
+                }
+            ],
+            "mitigation_measures": [
+                "Use strong encryption for Wi-Fi network",
+                "Regularly check for firmware updates"
+            ]
+        },
+        {
+            "name": "SimpliSafe Video Doorbell Pro",
+            "details": {
+                "resolution": "1080p HD video",
+                "features": [
+                    "HDR",
+                    "Infrared night vision"
+                ]
+            },
+            "image_url": "/images/smart_door_bells/SimpliSafe Video Doorbell Pro.webp",
+            "vulnerabilities": [
+                {
+                    "name": "Data Transmission",
+                    "description": "Potential vulnerabilities in data transmission"
+                },
+                {
+                    "name": "Integration Risks",
+                    "description": "Risks from integration with other systems"
+                }
+            ],
+            "mitigation_measures": [
+                "Use devices with strong encryption protocols",
+                "Regularly review and update integration settings"
+            ]
+        },
+        {
+            "name": "SkyBell HD Video Doorbell",
+            "details": {
+                "resolution": "1080p HD video",
+                "features": [
+                    "Color night vision",
+                    "Free cloud storage"
+                ]
+            },
+            "image_url": "/images/smart_door_bells/SkyBell HD Video Doorbell.webp",
+            "vulnerabilities": [
+                {
+                    "name": "Firmware Security",
+                    "description": "Potential delays in updates"
+                },
+                {
+                    "name": "Network Vulnerabilities",
+                    "description": "Security of the device on the network"
+                }
+            ],
+            "mitigation_measures": [
+                "Regularly update firmware",
+                "Use strong encryption and ensure network security"
+            ]
+        },
+        {
+            "name": "Vivint Doorbell Camera Pro",
+            "details": {
+                "resolution": "1080p HDR video",
+                "features": [
+                    "180-degree field of view",
+                    "Integration with Vivint smart home systems"
+                ]
+            },
+            "image_url": "/images/smart_door_bells/Vivint Doorbell Camera Pro.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data handling"
+                },
+                {
+                    "name": "Integration Risks",
+                    "description": "Potential vulnerabilities from other Vivint devices"
+                }
+            ],
+            "mitigation_measures": [
+                "Regularly review and adjust privacy settings",
+                "Ensure all integrated devices are secure and updated"
+            ]
+        },
+        {
+            "name": "Maximus Answer DualCam Video Doorbell",
+            "details": {
+                "resolution": "1080p HD video",
+                "features": [
+                    "Dual cameras (180-degree field of view)",
+                    "Two-way audio"
+                ]
+            },
+            "image_url": "/images/smart_door_bells/Maximus Answer DualCam Video Doorbell.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Cloud Security",
+                    "description": "Potential vulnerabilities related to cloud storage services"
+                },
+                {
+                    "name": "Firmware Updates",
+                    "description": "Risks from outdated firmware"
+                }
+            ],
+            "mitigation_measures": [
+                "Use strong passwords and enable 2FA for cloud accounts",
+                "Ensure timely updates to the firmware"
+            ]
+        }
+    ],
+    "smart_thermostats": [
+        {
+            "name": "Nest Learning Thermostat",
+            "details": {
+                "features": [
+                    "Auto-schedule",
+                    "Remote control via app"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Nest Learning Thermostat.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over extensive data collection"
+                },
+                {
+                    "name": "Device Hacking",
+                    "description": "Risks if passwords are weak"
+                }
+            ],
+            "mitigation_measures": [
+                "Regularly review and adjust privacy settings",
+                "Use strong passwords and enable 2FA",
+                "Update firmware regularly"
+            ]
+        },
+        {
+            "name": "Ecobee SmartThermostat",
+            "details": {
+                "features": [
+                    "Voice control",
+                    "SmartSensor compatibility"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Ecobee SmartThermostat.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Device Hacking",
+                    "description": "Risks if passwords are weak"
+                }
+            ],
+            "mitigation_measures": [
+                "Regularly review and adjust privacy settings",
+                "Use strong passwords and enable 2FA",
+                "Update firmware regularly"
+            ]
+        },
+        {
+            "name": "Honeywell Home T9 Smart Thermostat",
+            "details": {
+                "features": [
+                    "Room-by-room temperature control",
+                    "Geofencing"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Honeywell Home T9 Smart Thermostat.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Firmware Security",
+                    "description": "Potential vulnerabilities if firmware is not updated"
+                }
+            ],
+            "mitigation_measures": [
+                "Review and adjust privacy settings",
+                "Regularly update firmware",
+                "Secure Wi-Fi network"
+            ]
+        },
+        {
+            "name": "Emerson Sensi Touch Wi-Fi Thermostat",
+            "details": {
+                "features": [
+                    "Touchscreen display",
+                    "Geofencing"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Emerson Sensi Touch Wi-Fi Thermostat.png",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Network Security",
+                    "description": "Vulnerabilities if Wi-Fi network is not secure"
+                }
+            ],
+            "mitigation_measures": [
+                "Review and adjust privacy settings",
+                "Secure Wi-Fi network",
+                "Regularly update firmware"
+            ]
+        },
+        {
+            "name": "Johnson Controls GLAS Smart Thermostat",
+            "details": {
+                "features": [
+                    "Transparent OLED touchscreen",
+                    "Air quality monitoring"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Johnson Controls GLAS Smart Thermostat.jpeg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Firmware Security",
+                    "description": "Potential vulnerabilities if firmware is not updated"
+                }
+            ],
+            "mitigation_measures": [
+                "Review and adjust privacy settings",
+                "Regularly update firmware",
+                "Secure Wi-Fi network"
+            ]
+        },
+        {
+            "name": "Lennox iComfort S30 Ultra Smart Thermostat",
+            "details": {
+                "features": [
+                    "7-inch HD color touchscreen",
+                    "Smart Away mode"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Lennox iComfort S30 Ultra Smart Thermostat.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Device Hacking",
+                    "description": "Risks if passwords are weak"
+                }
+            ],
+            "mitigation_measures": [
+                "Regularly review and adjust privacy settings",
+                "Use strong passwords and enable 2FA",
+                "Update firmware regularly"
+            ]
+        },
+        {
+            "name": "Carrier Infinity Touch Control Thermostat",
+            "details": {
+                "features": [
+                    "Wi-Fi connectivity",
+                    "Energy usage tracking"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Carrier Infinity Touch Control Thermostat.jpeg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Firmware Security",
+                    "description": "Potential vulnerabilities if firmware is not updated"
+                }
+            ],
+            "mitigation_measures": [
+                "Review and adjust privacy settings",
+                "Regularly update firmware",
+                "Secure Wi-Fi network"
+            ]
+        },
+        {
+            "name": "Tado Smart Thermostat",
+            "details": {
+                "features": [
+                    "Geofencing",
+                    "Weather adaptation"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Tado Smart Thermostat.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Firmware Security",
+                    "description": "Potential vulnerabilities if firmware is not updated"
+                }
+            ],
+            "mitigation_measures": [
+                "Review and adjust privacy settings",
+                "Regularly update firmware",
+                "Secure Wi-Fi network"
+            ]
+        },
+        {
+            "name": "Lux Kono Smart Thermostat",
+            "details": {
+                "features": [
+                    "Touchscreen display",
+                    "Works with Alexa and Google Assistant"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Lux Kono Smart Thermostat.webp",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Device Hacking",
+                    "description": "Risks if passwords are weak"
+                }
+            ],
+            "mitigation_measures": [
+                "Regularly review and adjust privacy settings",
+                "Use strong passwords and enable 2FA",
+                "Update firmware regularly"
+            ]
+        },
+        {
+            "name": "Netatmo Smart Thermostat",
+            "details": {
+                "features": [
+                    "Modulation control",
+                    "Energy savings report"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Netatmo Smart Thermostat.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Firmware Security",
+                    "description": "Potential vulnerabilities if firmware is not updated"
+                }
+            ],
+            "mitigation_measures": [
+                "Review and adjust privacy settings",
+                "Regularly update firmware",
+                "Secure Wi-Fi network"
+            ]
+        },
+        {
+            "name": "Sinopé Smart Thermostat",
+            "details": {
+                "features": [
+                    "Geo-localization",
+                    "Compatible with various heating systems"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Sinopé Smart Thermostat.webp",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Device Hacking",
+                    "description": "Risks if passwords are weak"
+                }
+            ],
+            "mitigation_measures": [
+                "Regularly review and adjust privacy settings",
+                "Use strong passwords and enable 2FA",
+                "Update firmware regularly"
+            ]
+        },
+        {
+            "name": "Hive Active Heating Thermostat",
+            "details": {
+                "features": [
+                    "Heating and hot water control",
+                    "Holiday mode"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Hive Active Heating Thermostat.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Firmware Security",
+                    "description": "Potential vulnerabilities if firmware is not updated"
+                }
+            ],
+            "mitigation_measures": [
+                "Review and adjust privacy settings",
+                "Regularly update firmware",
+                "Secure Wi-Fi network"
+            ]
+        },
+        {
+            "name": "Bosch Smart Home Thermostat",
+            "details": {
+                "features": [
+                    "Touchscreen display",
+                    "Compatible with Bosch Smart Home system"
+                ]
+            },
+            "image_url": "/images/smart_thermostat/Bosch Smart Home Thermostat.jpg",
+            "vulnerabilities": [
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Device Hacking",
+                    "description": "Risks if passwords are weak"
+                }
+            ],
+            "mitigation_measures": [
+                "Regularly review and adjust privacy settings",
+                "Use strong passwords and enable 2FA",
+                "Update firmware regularly"
+            ]
+        }
+    ]
+}
