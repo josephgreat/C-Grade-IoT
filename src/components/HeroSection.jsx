@@ -48,7 +48,7 @@ const HeroSection = () => {
                 </Text>
                 <Text fontSize={"sm"} fontWeight={"semibold"} opacity={".6"}>
                   IoT <br />
-                  Products
+                  Devices
                 </Text>
               </Box>
               <Box>
@@ -56,7 +56,7 @@ const HeroSection = () => {
                   15+
                 </Text>
                 <Text fontSize={"sm"} fontWeight={"semibold"} opacity={".6"}>
-                  IoT Product <br /> Models
+                  IoT Device <br /> Models
                 </Text>
               </Box>
               <Box>
