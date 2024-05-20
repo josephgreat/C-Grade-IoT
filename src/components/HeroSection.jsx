@@ -30,16 +30,17 @@ const HeroSection = () => {
         zIndex={"2"}
         pos={"relative"}
       >
-        <Flex justifyContent={"space-between"} alignItems={"center"} flexWrap={"wrap"} gap="4">
+        <Flex
+          justifyContent={"space-between"}
+          alignItems={"center"}
+          flexWrap={"wrap"}
+          gap="4"
+        >
           <Box w={{ base: "100%", md: "50%" }}>
             <Heading fontSize="2.5rem">Welcome to Your IoT Safety Hub</Heading>
             <Text fontSize={"md"} mt="4" fontWeight={"semibold"} opacity={".6"}>
               Protecting Your Home, One Device at a Time
             </Text>
-
-            <Button mt="4" display={{ md: "none" }}>
-              Explore Products
-            </Button>
             <Flex mt="16" gap={{ base: "10", md: "16" }} flexWrap={"wrap"}>
               <Box>
                 <Text fontSize={"2rem"} fontWeight={"bold"}>
@@ -47,15 +48,15 @@ const HeroSection = () => {
                 </Text>
                 <Text fontSize={"sm"} fontWeight={"semibold"} opacity={".6"}>
                   IoT <br />
-                  products
+                  Products
                 </Text>
               </Box>
               <Box>
                 <Text fontSize={"2rem"} fontWeight={"bold"}>
-                  40+
+                  15+
                 </Text>
                 <Text fontSize={"sm"} fontWeight={"semibold"} opacity={".6"}>
-                  Product <br /> Models
+                  IoT Product <br /> Models
                 </Text>
               </Box>
               <Box>

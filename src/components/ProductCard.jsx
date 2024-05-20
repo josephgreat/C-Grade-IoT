@@ -28,7 +28,7 @@ const ProductCard = ({ device, index }) => {
     mitigation_measures,
     vulnerabilities,
   } = device;
-  let { resolution, features } = details;
+  let { resolution, features, connectivity } = details;
   return (
     <VStack
       w="100%"
@@ -54,6 +54,7 @@ const ProductCard = ({ device, index }) => {
         <Box w={{ base: "100%", md: "50%" }}
           order={index % 2 === 0 ? 2 : 1}
           >
+          {connectivity && <Text><Text as="span" fontWeight={"semibold"}>Connectivity:</Text> {connectivity}</Text>}
           {resolution && <Text><Text as="span" fontWeight={"semibold"}>Resolution:</Text> {resolution}</Text>}
           <Heading as="h6" fontSize={"md"}>
             Features
@@ -85,7 +86,7 @@ const ProductCard = ({ device, index }) => {
               </Flex>
             ))}
           </TabPanel>
-          <TabPanel bg="rgba(200,200,200,.3)" roundedBottom="2rem" display={"flex"} flexDir={"column"} gap="2">
+          <TabPanel display={"flex"} flexDir={"column"} gap="2">
             {mitigation_measures.map((mitigation_measure, index) => (
               <Flex key={index} alignItems={"center"} gap="2">
                 <Icon as={BsCheck2All} />

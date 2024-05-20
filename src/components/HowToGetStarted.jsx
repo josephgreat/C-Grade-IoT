@@ -30,7 +30,7 @@ const HowToGetStarted = () => {
       bg: "/images/steps/stay updated.webp",
       step_title: "Stay Updated",
       description:
-        "Subscribe to our newsletter to receive the latest updates on IoT security.",
+        "click on blog section to read more articles or current Vulnerabilities and hints on Mitigating them",
     },
   ];
   return (

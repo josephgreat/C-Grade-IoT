@@ -97,17 +97,7 @@ const Products = () => {
         </Box>
         <Box my="4">
           <Text>
-            Check out other{" "}
-            <Link
-              as={RouteLink}
-              to={`/vulnerability/${filteringValue}`}
-              color={"primary"}
-              textDecor={"underline"}
-              fontWeight={"semibold"}
-            >
-              vulnerabilities
-            </Link>{" "}
-            common among{" "}
+            Visit the{" "}
             <Text
               as="span"
               fontWeight={"semibold"}
@@ -116,16 +106,16 @@ const Products = () => {
             >
               {filteringValue}
             </Text>
-            and their{" "}
             <Link
               as={RouteLink}
-              to={`/vulnerability_control/${filteringValue}`}
+              to={`/vulnerability/${filteringValue}`}
               color={"primary"}
               textDecor={"underline"}
               fontWeight={"semibold"}
             >
-              mitigation measures
-            </Link>
+              vulnerabilities blog session
+            </Link>{" "}
+            for more information and industry research.
           </Text>
         </Box>
       </Box>

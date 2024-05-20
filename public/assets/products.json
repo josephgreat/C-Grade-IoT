@@ -22,12 +22,22 @@
                 {
                     "name": "Firmware Updates",
                     "description": "Delays in applying updates"
+                },
+                {
+                    "name": "Location Tracking",
+                    "description": "Potential misuse of location data"
+                },
+                {
+                    "name": "Microphone Hijacking",
+                    "description": "Unauthorized access to microphone"
                 }
             ],
             "mitigation_measures": [
                 "Review and adjust privacy settings",
                 "Use strong, unique passwords and enable 2FA",
-                "Regularly update firmware"
+                "Regularly update firmware",
+                "Disable location services when not needed",
+                "Monitor microphone usage and permissions"
             ]
         },
         {
@@ -48,12 +58,22 @@
                 {
                     "name": "Device Hacking",
                     "description": "Risks if passwords are weak"
+                },
+                {
+                    "name": "Software Vulnerabilities",
+                    "description": "Potential bugs and exploits in the software"
+                },
+                {
+                    "name": "Integration Risks",
+                    "description": "Risks from integration with other Google services"
                 }
             ],
             "mitigation_measures": [
                 "Regularly review and adjust privacy settings",
                 "Use strong passwords and enable 2FA",
-                "Update firmware regularly"
+                "Update firmware regularly",
+                "Monitor and manage integrations with other services",
+                "Report and address software bugs promptly"
             ]
         },
         {
@@ -74,12 +94,22 @@
                 {
                     "name": "Cloud Storage",
                     "description": "Data breaches affecting stored footage"
+                },
+                {
+                    "name": "Data Transmission",
+                    "description": "Interception of data during transmission"
+                },
+                {
+                    "name": "Battery Life",
+                    "description": "Security risks if the device powers down unexpectedly"
                 }
             ],
             "mitigation_measures": [
                 "Use strong encryption for Wi-Fi network",
                 "Regularly check for updates and review cloud storage policies",
-                "Ensure strong passwords and enable 2FA"
+                "Ensure strong passwords and enable 2FA",
+                "Monitor battery status and keep devices charged",
+                "Implement end-to-end encryption for data transmission"
             ]
         },
         {
@@ -100,12 +130,18 @@
                 {
                     "name": "Encryption",
                     "description": "Concerns over data encryption protocols"
+                },
+                {
+                    "name": "Motion Detection Flaws",
+                    "description": "Inaccuracies in motion detection triggering false alarms"
                 }
             ],
             "mitigation_measures": [
                 "Ensure physical security of local storage",
                 "Regularly update firmware",
-                "Review encryption standards and stay updated"
+                "Review encryption standards and stay updated",
+                "Calibrate motion detection settings properly",
+                "Use secure local storage options"
             ]
         },
         {
@@ -126,11 +162,18 @@
                 {
                     "name": "Physical Security",
                     "description": "Potential tampering with the device"
+                },
+                {
+                    "name": "Audio Interception",
+                    "description": "Unauthorized interception of audio recordings"
                 }
             ],
             "mitigation_measures": [
                 "Regularly update firmware",
-                "Secure installation to prevent tampering"
+                "Secure installation to prevent tampering",
+                "Use encrypted communication for audio data",
+                "Monitor device for physical tampering",
+                "Set up alerts for unauthorized access"
             ]
         },
         {
@@ -151,11 +194,18 @@
                 {
                     "name": "Firmware Updates",
                     "description": "Potential delays in updates"
+                },
+                {
+                    "name": "User Account Compromise",
+                    "description": "Risk of user accounts being compromised"
                 }
             ],
             "mitigation_measures": [
                 "Use strong encryption for Wi-Fi network",
-                "Regularly check for firmware updates"
+                "Regularly check for firmware updates",
+                "Use strong, unique passwords for user accounts",
+                "Enable two-factor authentication (2FA)",
+                "Monitor account activity for suspicious behavior"
             ]
         },
         {
@@ -176,11 +226,18 @@
                 {
                     "name": "Integration Risks",
                     "description": "Risks from integration with other systems"
+                },
+                {
+                    "name": "User Account Security",
+                    "description": "Risks if user accounts are compromised"
                 }
             ],
             "mitigation_measures": [
                 "Use devices with strong encryption protocols",
-                "Regularly review and update integration settings"
+                "Regularly review and update integration settings",
+                "Use strong, unique passwords and enable 2FA",
+                "Monitor data transmission for anomalies",
+                "Implement end-to-end encryption"
             ]
         },
         {
@@ -201,11 +258,18 @@
                 {
                     "name": "Network Vulnerabilities",
                     "description": "Security of the device on the network"
+                },
+                {
+                    "name": "Device Spoofing",
+                    "description": "Potential for spoofing the device"
                 }
             ],
             "mitigation_measures": [
                 "Regularly update firmware",
-                "Use strong encryption and ensure network security"
+                "Use strong encryption and ensure network security",
+                "Monitor network traffic for suspicious activity",
+                "Implement device authentication measures",
+                "Review security logs regularly"
             ]
         },
         {
@@ -226,36 +290,50 @@
                 {
                     "name": "Integration Risks",
                     "description": "Potential vulnerabilities from other Vivint devices"
+                },
+                {
+                    "name": "System Downtime",
+                    "description": "Risks associated with system outages"
                 }
             ],
             "mitigation_measures": [
                 "Regularly review and adjust privacy settings",
-                "Ensure all integrated devices are secure and updated"
+                "Ensure all integrated devices are secure and updated",
+                "Implement redundancy and backup solutions",
+                "Monitor system performance and address issues promptly",
+                "Review and manage data sharing policies"
             ]
         },
         {
-            "name": "Maximus Answer DualCam Video Doorbell",
+            "name": "Zmodo Greet Smart Doorbell",
             "details": {
-                "resolution": "1080p HD video",
+                "resolution": "720p HD video",
                 "features": [
-                    "Dual cameras (180-degree field of view)",
-                    "Two-way audio"
+                    "Pre-recorded messages",
+                    "Cloud storage"
                 ]
             },
-            "image_url": "/images/smart_door_bells/Maximus Answer DualCam Video Doorbell.jpg",
+            "image_url": "/images/smart_door_bells/Zmodo Greet Smart Doorbell.webp",
             "vulnerabilities": [
                 {
+                    "name": "Resolution Limitations",
+                    "description": "Lower video resolution may impact clarity"
+                },
+                {
                     "name": "Cloud Security",
-                    "description": "Potential vulnerabilities related to cloud storage services"
+                    "description": "Concerns over cloud data breaches"
                 },
                 {
                     "name": "Firmware Updates",
-                    "description": "Risks from outdated firmware"
+                    "description": "Potential delays in updates"
                 }
             ],
             "mitigation_measures": [
-                "Use strong passwords and enable 2FA for cloud accounts",
-                "Ensure timely updates to the firmware"
+                "Consider higher resolution options if clarity is critical",
+                "Regularly check for firmware updates",
+                "Use strong, unique passwords for cloud accounts",
+                "Monitor cloud account activity for suspicious behavior",
+                "Use devices with strong encryption for data storage"
             ]
         }
     ],
@@ -263,326 +341,353 @@
         {
             "name": "Nest Learning Thermostat",
             "details": {
+                "connectivity": "Wi-Fi",
                 "features": [
-                    "Auto-schedule",
+                    "Learning capabilities",
                     "Remote control via app"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Nest Learning Thermostat.jpg",
+            "image_url": "/images/smart_thermostats/Nest Learning Thermostat.jpg",
             "vulnerabilities": [
                 {
-                    "name": "Data Privacy",
-                    "description": "Concerns over extensive data collection"
+                    "name": "Wi-Fi Security",
+                    "description": "Risks if Wi-Fi network is compromised"
                 },
                 {
-                    "name": "Device Hacking",
-                    "description": "Risks if passwords are weak"
+                    "name": "User Data Privacy",
+                    "description": "Concerns over data collection and sharing"
+                },
+                {
+                    "name": "Firmware Updates",
+                    "description": "Potential delays in receiving updates"
                 }
             ],
             "mitigation_measures": [
-                "Regularly review and adjust privacy settings",
-                "Use strong passwords and enable 2FA",
-                "Update firmware regularly"
+                "Use strong Wi-Fi encryption",
+                "Regularly review privacy settings",
+                "Ensure firmware is always up to date",
+                "Use strong passwords for the device",
+                "Monitor network traffic for anomalies"
             ]
         },
         {
             "name": "Ecobee SmartThermostat",
             "details": {
+                "connectivity": "Wi-Fi",
                 "features": [
-                    "Voice control",
-                    "SmartSensor compatibility"
+                    "Alexa built-in",
+                    "Room sensors"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Ecobee SmartThermostat.jpg",
+            "image_url": "/images/smart_thermostats/Ecobee SmartThermostat.jpg",
             "vulnerabilities": [
+                {
+                    "name": "Voice Control Security",
+                    "description": "Risks associated with Alexa integration"
+                },
                 {
                     "name": "Data Privacy",
                     "description": "Concerns over data collection and sharing"
                 },
                 {
-                    "name": "Device Hacking",
-                    "description": "Risks if passwords are weak"
+                    "name": "Firmware Vulnerabilities",
+                    "description": "Risks from outdated firmware"
                 }
             ],
             "mitigation_measures": [
+                "Secure voice control settings",
                 "Regularly review and adjust privacy settings",
-                "Use strong passwords and enable 2FA",
-                "Update firmware regularly"
+                "Ensure firmware is always up to date",
+                "Use strong passwords for the device",
+                "Monitor device usage for anomalies"
             ]
         },
         {
             "name": "Honeywell Home T9 Smart Thermostat",
             "details": {
+                "connectivity": "Wi-Fi",
                 "features": [
-                    "Room-by-room temperature control",
-                    "Geofencing"
+                    "Smart room sensors",
+                    "Remote control via app"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Honeywell Home T9 Smart Thermostat.jpg",
+            "image_url": "/images/smart_thermostats/Honeywell Home T9 Smart Thermostat.jpg",
             "vulnerabilities": [
                 {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
+                    "name": "Network Security",
+                    "description": "Risks if the network is compromised"
                 },
                 {
-                    "name": "Firmware Security",
-                    "description": "Potential vulnerabilities if firmware is not updated"
+                    "name": "Data Privacy",
+                    "description": "Concerns over data handling and sharing"
+                },
+                {
+                    "name": "Software Vulnerabilities",
+                    "description": "Risks from outdated software"
                 }
             ],
             "mitigation_measures": [
-                "Review and adjust privacy settings",
-                "Regularly update firmware",
-                "Secure Wi-Fi network"
+                "Use strong encryption for network",
+                "Regularly review privacy settings",
+                "Keep software up to date",
+                "Use strong, unique passwords for the device",
+                "Monitor network traffic for anomalies"
             ]
         },
         {
             "name": "Emerson Sensi Touch Wi-Fi Thermostat",
             "details": {
+                "connectivity": "Wi-Fi",
                 "features": [
                     "Touchscreen display",
-                    "Geofencing"
+                    "Remote control via app"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Emerson Sensi Touch Wi-Fi Thermostat.png",
+            "image_url": "/images/smart_thermostats/Emerson Sensi Touch Wi-Fi Thermostat.png",
             "vulnerabilities": [
-                {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
-                },
                 {
                     "name": "Network Security",
-                    "description": "Vulnerabilities if Wi-Fi network is not secure"
+                    "description": "Risks if the network is compromised"
+                },
+                {
+                    "name": "Data Privacy",
+                    "description": "Concerns over data handling and sharing"
+                },
+                {
+                    "name": "Software Vulnerabilities",
+                    "description": "Risks from outdated software"
                 }
             ],
             "mitigation_measures": [
-                "Review and adjust privacy settings",
-                "Secure Wi-Fi network",
-                "Regularly update firmware"
+                "Use strong encryption for network",
+                "Regularly review privacy settings",
+                "Keep software up to date",
+                "Use strong, unique passwords for the device",
+                "Monitor network traffic for anomalies"
             ]
         },
         {
-            "name": "Johnson Controls GLAS Smart Thermostat",
+            "name": "Wyze Thermostat",
             "details": {
+                "connectivity": "Wi-Fi",
                 "features": [
-                    "Transparent OLED touchscreen",
-                    "Air quality monitoring"
+                    "App control",
+                    "Energy saving mode"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Johnson Controls GLAS Smart Thermostat.jpeg",
+            "image_url": "/images/smart_thermostats/Wyze Thermostat.jpg",
             "vulnerabilities": [
                 {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
+                    "name": "Network Security",
+                    "description": "Risks if the network is compromised"
                 },
                 {
-                    "name": "Firmware Security",
-                    "description": "Potential vulnerabilities if firmware is not updated"
+                    "name": "Data Privacy",
+                    "description": "Concerns over data handling and sharing"
+                },
+                {
+                    "name": "Software Vulnerabilities",
+                    "description": "Risks from outdated software"
                 }
             ],
             "mitigation_measures": [
-                "Review and adjust privacy settings",
-                "Regularly update firmware",
-                "Secure Wi-Fi network"
+                "Use strong encryption for network",
+                "Regularly review privacy settings",
+                "Keep software up to date",
+                "Use strong, unique passwords for the device",
+                "Monitor network traffic for anomalies"
             ]
         },
         {
-            "name": "Lennox iComfort S30 Ultra Smart Thermostat",
+            "name": "Google Nest Thermostat E",
             "details": {
+                "connectivity": "Wi-Fi",
                 "features": [
-                    "7-inch HD color touchscreen",
-                    "Smart Away mode"
+                    "Remote control via app",
+                    "Energy saving mode"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Lennox iComfort S30 Ultra Smart Thermostat.jpg",
+            "image_url": "/images/smart_thermostats/Google Nest Thermostat E.webp",
             "vulnerabilities": [
                 {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
+                    "name": "Network Security",
+                    "description": "Risks if the network is compromised"
                 },
                 {
-                    "name": "Device Hacking",
-                    "description": "Risks if passwords are weak"
+                    "name": "Data Privacy",
+                    "description": "Concerns over data handling and sharing"
+                },
+                {
+                    "name": "Software Vulnerabilities",
+                    "description": "Risks from outdated software"
                 }
             ],
             "mitigation_measures": [
-                "Regularly review and adjust privacy settings",
-                "Use strong passwords and enable 2FA",
-                "Update firmware regularly"
+                "Use strong encryption for network",
+                "Regularly review privacy settings",
+                "Keep software up to date",
+                "Use strong, unique passwords for the device",
+                "Monitor network traffic for anomalies"
             ]
         },
         {
-            "name": "Carrier Infinity Touch Control Thermostat",
+            "name": "Honeywell Home T6 Pro Z-Wave",
             "details": {
+                "connectivity": "Z-Wave",
                 "features": [
-                    "Wi-Fi connectivity",
-                    "Energy usage tracking"
+                    "Energy-saving modes",
+                    "Smart scheduling"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Carrier Infinity Touch Control Thermostat.jpeg",
+            "image_url": "/images/smart_thermostats/Honeywell Home T6 Pro Z-Wave.jpeg",
             "vulnerabilities": [
                 {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
+                    "name": "Z-Wave Security",
+                    "description": "Risks associated with Z-Wave protocol"
                 },
                 {
-                    "name": "Firmware Security",
-                    "description": "Potential vulnerabilities if firmware is not updated"
+                    "name": "Data Privacy",
+                    "description": "Concerns over data handling and sharing"
+                },
+                {
+                    "name": "Firmware Updates",
+                    "description": "Potential delays in receiving updates"
                 }
             ],
             "mitigation_measures": [
-                "Review and adjust privacy settings",
-                "Regularly update firmware",
-                "Secure Wi-Fi network"
+                "Use secure Z-Wave network settings",
+                "Regularly review privacy settings",
+                "Ensure firmware is always up to date",
+                "Use strong passwords for the device",
+                "Monitor network traffic for anomalies"
             ]
         },
         {
-            "name": "Tado Smart Thermostat",
+            "name": "Stelpro KI Thermostat",
             "details": {
+                "connectivity": "Zigbee",
                 "features": [
-                    "Geofencing",
-                    "Weather adaptation"
+                    "Line voltage control",
+                    "Remote control via app"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Tado Smart Thermostat.jpg",
+            "image_url": "/images/smart_thermostats/Stelpro KI Thermostat.jpeg",
             "vulnerabilities": [
                 {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
+                    "name": "Zigbee Security",
+                    "description": "Risks associated with Zigbee protocol"
                 },
                 {
-                    "name": "Firmware Security",
-                    "description": "Potential vulnerabilities if firmware is not updated"
+                    "name": "Data Privacy",
+                    "description": "Concerns over data handling and sharing"
+                },
+                {
+                    "name": "Firmware Updates",
+                    "description": "Potential delays in receiving updates"
                 }
             ],
             "mitigation_measures": [
-                "Review and adjust privacy settings",
-                "Regularly update firmware",
-                "Secure Wi-Fi network"
+                "Use secure Zigbee network settings",
+                "Regularly review privacy settings",
+                "Ensure firmware is always up to date",
+                "Use strong passwords for the device",
+                "Monitor network traffic for anomalies"
             ]
         },
         {
-            "name": "Lux Kono Smart Thermostat",
+            "name": "GoControl Thermostat",
             "details": {
+                "connectivity": "Z-Wave",
                 "features": [
-                    "Touchscreen display",
-                    "Works with Alexa and Google Assistant"
+                    "Battery or C-wire powered",
+                    "Flexible scheduling"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Lux Kono Smart Thermostat.webp",
+            "image_url": "/images/smart_thermostats/GoControl Thermostat.jpeg",
             "vulnerabilities": [
                 {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
+                    "name": "Z-Wave Security",
+                    "description": "Risks associated with Z-Wave protocol"
                 },
                 {
-                    "name": "Device Hacking",
-                    "description": "Risks if passwords are weak"
+                    "name": "Data Privacy",
+                    "description": "Concerns over data handling and sharing"
+                },
+                {
+                    "name": "Firmware Updates",
+                    "description": "Potential delays in receiving updates"
                 }
             ],
             "mitigation_measures": [
-                "Regularly review and adjust privacy settings",
-                "Use strong passwords and enable 2FA",
-                "Update firmware regularly"
+                "Use secure Z-Wave network settings",
+                "Regularly review privacy settings",
+                "Ensure firmware is always up to date",
+                "Use strong passwords for the device",
+                "Monitor network traffic for anomalies"
             ]
         },
         {
-            "name": "Netatmo Smart Thermostat",
+            "name": "Mysa Smart Thermostat",
             "details": {
+                "connectivity": "Wi-Fi",
                 "features": [
-                    "Modulation control",
-                    "Energy savings report"
+                    "App control",
+                    "Energy saving mode"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Netatmo Smart Thermostat.jpg",
+            "image_url": "/images/smart_thermostats/Mysa Smart Thermostat.png",
             "vulnerabilities": [
                 {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
+                    "name": "Network Security",
+                    "description": "Risks if the network is compromised"
                 },
                 {
-                    "name": "Firmware Security",
-                    "description": "Potential vulnerabilities if firmware is not updated"
+                    "name": "Data Privacy",
+                    "description": "Concerns over data handling and sharing"
+                },
+                {
+                    "name": "Software Vulnerabilities",
+                    "description": "Risks from outdated software"
                 }
             ],
             "mitigation_measures": [
-                "Review and adjust privacy settings",
-                "Regularly update firmware",
-                "Secure Wi-Fi network"
+                "Use strong encryption for network",
+                "Regularly review privacy settings",
+                "Keep software up to date",
+                "Use strong, unique passwords for the device",
+                "Monitor network traffic for anomalies"
             ]
         },
         {
             "name": "Sinopé Smart Thermostat",
             "details": {
+                "connectivity": "Zigbee",
                 "features": [
-                    "Geo-localization",
-                    "Compatible with various heating systems"
+                    "Line voltage control",
+                    "Remote control via app"
                 ]
             },
-            "image_url": "/images/smart_thermostat/Sinopé Smart Thermostat.webp",
+            "image_url": "/images/smart_thermostats/Sinopé Smart Thermostat.webp",
             "vulnerabilities": [
                 {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
+                    "name": "Zigbee Security",
+                    "description": "Risks associated with Zigbee protocol"
                 },
                 {
-                    "name": "Device Hacking",
-                    "description": "Risks if passwords are weak"
+                    "name": "Data Privacy",
+                    "description": "Concerns over data handling and sharing"
+                },
+                {
+                    "name": "Firmware Updates",
+                    "description": "Potential delays in receiving updates"
                 }
             ],
             "mitigation_measures": [
-                "Regularly review and adjust privacy settings",
-                "Use strong passwords and enable 2FA",
-                "Update firmware regularly"
-            ]
-        },
-        {
-            "name": "Hive Active Heating Thermostat",
-            "details": {
-                "features": [
-                    "Heating and hot water control",
-                    "Holiday mode"
-                ]
-            },
-            "image_url": "/images/smart_thermostat/Hive Active Heating Thermostat.jpg",
-            "vulnerabilities": [
-                {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
-                },
-                {
-                    "name": "Firmware Security",
-                    "description": "Potential vulnerabilities if firmware is not updated"
-                }
-            ],
-            "mitigation_measures": [
-                "Review and adjust privacy settings",
-                "Regularly update firmware",
-                "Secure Wi-Fi network"
-            ]
-        },
-        {
-            "name": "Bosch Smart Home Thermostat",
-            "details": {
-                "features": [
-                    "Touchscreen display",
-                    "Compatible with Bosch Smart Home system"
-                ]
-            },
-            "image_url": "/images/smart_thermostat/Bosch Smart Home Thermostat.jpg",
-            "vulnerabilities": [
-                {
-                    "name": "Data Privacy",
-                    "description": "Concerns over data collection and sharing"
-                },
-                {
-                    "name": "Device Hacking",
-                    "description": "Risks if passwords are weak"
-                }
-            ],
-            "mitigation_measures": [
-                "Regularly review and adjust privacy settings",
-                "Use strong passwords and enable 2FA",
-                "Update firmware regularly"
+                "Use secure Zigbee network settings",
+                "Regularly review privacy settings",
+                "Ensure firmware is always up to date",
+                "Use strong passwords for the device",
+                "Monitor network traffic for anomalies"
             ]
         }
     ]
