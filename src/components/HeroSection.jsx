@@ -85,7 +85,7 @@ const HeroSection = () => {
                 color: "primary",
               }}
             >
-              Explore Products
+              View IoT Devices
             </Link>
           </Box>
         </Flex>
