@@ -26,7 +26,7 @@ const Footer = () => {
               display="inline-block"
               mr="1"
             />
-           IoT INFOR HUB
+           IoT-INFOhub
           </Heading>
           <Flex gap={"4"}>
             <Link href="#">About</Link>

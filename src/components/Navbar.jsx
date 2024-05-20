@@ -33,7 +33,7 @@ const Navbar = () => {
       >
         <Link as={RouteLink} to="/" fontSize="xl" fontWeight="bold">
           <Img src="/internet-of-things.png" w="1.5rem" display="inline-block" mr="1" />
-         IoT INFOR HUB
+         IoT-INFOhub
         </Link>
         <Spacer />
         <Box>
