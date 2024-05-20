@@ -26,7 +26,7 @@ const Footer = () => {
               display="inline-block"
               mr="1"
             />
-            C-Grade IoT
+           IoT INFOR HUB
           </Heading>
           <Flex gap={"4"}>
             <Link href="#">About</Link>
@@ -40,7 +40,7 @@ const Footer = () => {
           opacity={".7"}
           fontWeight={"semibold"}
         >
-          Copyright &copy; 2024 C-Grade IoT
+          Copyright &copy; 2024IoT INFOR HUB
         </Text>
       </Box>
     </Container>
