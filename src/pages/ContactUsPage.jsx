@@ -19,7 +19,7 @@ const ContactUsPage = () => {
         <Text mt="8">
           Have questions or need further assistance? <br />
           Reach out to our support team at
-          [support@iotsafetyhub.com](mailto:support@iotsafetyhub.com).
+          S5533612@bournemouth.ac.uk.
         </Text>
       </Box>
     </VStack>

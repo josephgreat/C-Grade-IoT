@@ -37,7 +37,7 @@ const HeroSection = () => {
           gap="4"
         >
           <Box w={{ base: "100%", md: "50%" }}>
-            <Heading fontSize="2.5rem">Welcome to Your IoT Safety Hub</Heading>
+            <Heading fontSize="2.5rem">Welcome to IOT SECURITY INFORMATION Hub</Heading>
             <Text fontSize={"md"} mt="4" fontWeight={"semibold"} opacity={".6"}>
               Protecting Your Home, One Device at a Time
             </Text>

@@ -13,8 +13,10 @@ const ContactUs = () => {
         Contact Us
       </Heading>
       <Text mt="8">
-        Have questions or need further assistance? <br />Reach out to our support team
-        at [support@iotsafetyhub.com](mailto:support@iotsafetyhub.com).
+        Have questions or need further assistance? <br />
+        Reach out to our support team at Have questions or need further
+        assistance? <br />
+        Reach out to our support team at S5533612@bournemouth.ac.uk..
       </Text>
     </Box>
   );
